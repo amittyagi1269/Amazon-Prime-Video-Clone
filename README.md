@@ -5,7 +5,7 @@ Automate the deployment of an Amazon Video clone application using Docker and Je
 
 ## Project Architecture Diagram
 
-   ![Project Architecture Diagram ](https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Project%20Architecture%20Diagram.gif)
+   ![Project Architecture Diagram ](https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Project%20Architecture%20Diagram.gif)
 
 ## Prerequisites
 
@@ -148,7 +148,7 @@ To connect to the EC2 instance using MobaXterm and the `.pem` key file, follow t
    sudo systemctl status jenkins
 
 ```
-  ![Jenkins status ](https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Jenkins%20status.png)
+  ![Jenkins status ](https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Jenkins%20status.png)
   
 ### 2. Access Jenkins:
    - Open Jenkins in your browser by copying the public IP address of the EC2 instance and pasting it into the address bar of your browser, followed by `:8080`. 
@@ -158,7 +158,7 @@ To connect to the EC2 instance using MobaXterm and the `.pem` key file, follow t
    
    After entering the IP address followed by `:8080` in the browser, the login page will appear, prompting for a password.
    
- ![login page ](https://github.com/anilrupnar/Deploying-Virtual-Browser/blob/main/images/login%20page.png )
+ ![login page ](https://github.com/amittyagi1269/Deploying-Virtual-Browser/blob/main/images/login%20page.png )
    
 To retrieve the password:
    ```bash
@@ -170,7 +170,7 @@ To retrieve the password:
 
 ### 3. Then click on Installed Suggested Plugins and then this appears:
 
- ![Suggested Plugins ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Suggested%20Plugins.png )
+ ![Suggested Plugins ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Suggested%20Plugins.png )
 
 
 ## Step 4: Install Docker and Set Up SonarQube
@@ -184,7 +184,7 @@ Since Docker isn’t installed on our EC2 instance yet, let’s install Docker a
      ```
    - Docker Version check :
      
- ![docker vesrion ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/docker%20vesrion.png )
+ ![docker vesrion ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/docker%20vesrion.png )
 
  
 ### 2. Adjust Docker Permissions:
@@ -200,7 +200,7 @@ Since Docker isn’t installed on our EC2 instance yet, let’s install Docker a
      ```
    - docker container status check :
 
-   ![ docker container status ](https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/docker%20ps.png )
+   ![ docker container status ](https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/docker%20ps.png )
   
  ### 4. Access SonarQube and Configure SonarQube
 Access the SonarQube web interface using a browser:  
@@ -217,7 +217,7 @@ Default **username**: `admin`
 Default **password**: `admin`  
 After the first login, you will be prompted to change the password for security.
 
-  ![SonarQube server login ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/SonarQube%20server%20login.png )
+  ![SonarQube server login ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/SonarQube%20server%20login.png )
  
 ### 6. Create a SonarQube Token
 1. Navigate to **Administration → Security → Users → Tokens**.
@@ -226,7 +226,7 @@ After the first login, you will be prompted to change the password for security.
 4. Save this token securely, as it will not be displayed again.
 
 
- ![sonar token genration ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/sonar%20token.png )
+ ![sonar token genration ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/sonar%20token.png )
  
    
 ### 7. Set Up a Project in SonarQube
@@ -240,13 +240,13 @@ After the first login, you will be prompted to change the password for security.
 5. Select **Continue → Other → Linux**.
 6. Copy the provided commands to set up and run the SonarQube Scanner on your local machine.
 
-![Setup Project 1 ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%201.png )
+![Setup Project 1 ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%201.png )
 
-![Setup Project 2 ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%202.png)
+![Setup Project 2 ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%202.png)
 
-![Setup Project 3 ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%203.png)
+![Setup Project 3 ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%203.png)
 
-![Setup Project 4 ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%204.png)
+![Setup Project 4 ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%204.png)
 
 
 ### 8. Configure Quality Gates
@@ -255,11 +255,11 @@ After the first login, you will be prompted to change the password for security.
    - **Name**: `Jenkins`
    - Click **Save**.
 
-![Setup Quality Gate 1 ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Quality%20Gate%201.png)
+![Setup Quality Gate 1 ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Quality%20Gate%201.png)
 
-![Setup Quality Gate 2 ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Quality%20Gate%202.png)
+![Setup Quality Gate 2 ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Quality%20Gate%202.png)
 
-![Setup Quality Gate 3 ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Quality%20Gate%203.png)
+![Setup Quality Gate 3 ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Quality%20Gate%203.png)
 
 ### 9. Configure a Webhook for Jenkins
 1. Go to **Administration → Configurations → Webhooks**.
@@ -269,9 +269,9 @@ After the first login, you will be prompted to change the password for security.
      Example: `http://<publicIP>:8080/sonarqube-webhook/`
 3. Click **Create**.
 
-![Setup Project 5 ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%205.png)
+![Setup Project 5 ]( https://github.com/amittyagi1269r/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%205.png)
 
-![Setup Project 6 ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%206.png)
+![Setup Project 6 ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Setup%20Project%206.png)
 
 ## Stage 5: Installing Trivy on EC2 
 
@@ -282,7 +282,7 @@ echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.
 sudo apt-get update
 sudo apt-get install trivy -y
 ```
- ![trivy version status ](https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/trivy%20version%20.png )
+ ![trivy version status ](https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/trivy%20version%20.png )
  
 ## Step 6: Install Plugins and Configure Jenkins
 
@@ -299,7 +299,7 @@ sudo apt-get install trivy -y
    - **Eclipse Temurin Installer**
 3. Click **Install** to add these plugins to Jenkins.
 
-![Install Plugins ](https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Install%20Plugins.png)
+![Install Plugins ](https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Install%20Plugins.png)
 
 
 ### 2. Add Credentials for SonarQube and DockerHub
@@ -311,7 +311,7 @@ sudo apt-get install trivy -y
    - **Description**: `sonar-cred`
    - Click **Create**.
 
-![jenkins steup](https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/jenkins%20steup.png)
+![jenkins steup](https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/jenkins%20steup.png)
 
 3. Add **DockerHub Credentials**:
    - **Kind**: Username with Password
@@ -330,7 +330,7 @@ sudo apt-get install trivy -y
    - **Sonar Authentication Token**: Select `sonar-cred` from the dropdown.
 3. Click **Apply** and **Save**.
 
-![ Manage Jenkins ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/Manage%20Jenkins.png )
+![ Manage Jenkins ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/Manage%20Jenkins.png )
 
 
 ### 4. Configure Tools in Jenkins
@@ -341,7 +341,7 @@ sudo apt-get install trivy -y
    - **Name**: `jdk17`
    - Check **Install Automatically**.
 
-![ JDK Installations ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/JDK%20Installations.png )
+![ JDK Installations ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/JDK%20Installations.png )
 
 4. Configure **SonarQube Scanner**:
    - Scroll to **SonarQube Scanner Installations**.
@@ -349,7 +349,7 @@ sudo apt-get install trivy -y
    - **Name**: `sonar`
    - Check **Install Automatically**.
   
-![ SonarQube Scanner Installlation  ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/SonarQube%20Scanner%20Installlation%20.png )
+![ SonarQube Scanner Installlation  ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/SonarQube%20Scanner%20Installlation%20.png )
 
 5. Configure **NodeJS**:
    - Scroll to **NodeJS Installations**.
@@ -358,7 +358,7 @@ sudo apt-get install trivy -y
    - **Version**: `NodeJS 16.20.0`
 6. Click **Apply** and **Save**.
 
-![ NodeJS ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/NodeJS.png )
+![ NodeJS ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/NodeJS.png )
 
 ## Step 7: Implement the CI/CD Pipeline in Jenkins
 
@@ -372,7 +372,7 @@ sudo apt-get install trivy -y
 5. Save the configuration.
 
 
-![ prime-CICD ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/prime-CICD.png )
+![ prime-CICD ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/prime-CICD.png )
 
 
 ### Pipeline Code
@@ -398,7 +398,7 @@ pipeline {
 
         stage('Git Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/anilrupnar/Amazon-Prime-Video-Clone.git'
+                git branch: 'main', url: 'https://github.com/amittyagi1269/Amazon-Prime-Video-Clone.git'
             }
         }
 
@@ -468,32 +468,32 @@ pipeline {
 - After saving the pipeline configuration, go to the pipeline job (`prime-CICD`) in Jenkins.
 - Click **Build Now** to trigger the CI/CD pipeline.
 
-![ build console ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/build%20console.png )
+![ build console ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/build%20console.png )
 
-![ build successful ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/build%20successful.png )
+![ build successful ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/build%20successful.png )
 
 ## Step 9: Final Application Deployed Successfully
 
-![ final output ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/final%20output.png )
+![ final output ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/final%20output.png )
 
 ## Application Deployed Successfully on DockerHub
 
-![ dockerhub status ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/dockerhub%20status.png )
+![ dockerhub status ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/dockerhub%20status.png )
 
 ## Deployed Pipeline Console Snapshot
 
-![ pipeline console ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/pipline%20console.png )
+![ pipeline console ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/pipline%20console.png )
 
 ## Deployed Pipeline Stages Snapshot
 
-![ pipeline stages ]( https://github.com/anilrupnar/Amazon-Prime-Video-Clone/blob/main/Images/pipline%20stages.png )
+![ pipeline stages ]( https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/pipline%20stages.png )
 
 
 **Thank you for reading my README file! 😊**
 
 **Feel free to connect with me:**
 
-- **LinkedIn**: [Anil Rupnar](https://www.linkedin.com/in/anilrupnar/)
-- **Email**: anilrupnar2003@gmail.com
+- **LinkedIn**: [Amit Tyagi](https://www.linkedin.com/in/amittyagigzb1/)
+- **Email**: amit001899@gmail.com
 
 
