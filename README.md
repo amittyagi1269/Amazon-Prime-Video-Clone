@@ -447,8 +447,8 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred') {
-                        sh "docker tag prime-clone:latest amit/prime-clone:latest"
-                        sh "docker push amit/prime-clone:latest"
+                        sh "docker tag prime-clone:latest amittyagi1269/prime-clone:latest"
+                        sh "docker push amittyagi1269/prime-clone:latest"
                     }
                 }
             }
@@ -456,7 +456,7 @@ pipeline {
 
         stage("Deploy to Container") {
             steps {
-                sh 'docker run -d --name amazon-prime -p 80:80 amit/prime-clone:latest'
+                sh 'docker run -d --name amazon-prime -p 80:80 amittyagi1269/prime-clone:latest'
             }
         }
     }
