@@ -199,6 +199,9 @@ Since Docker isn’t installed on our EC2 instance yet, let’s install Docker a
      docker run -d -p 9000:9000 sonarqube:lts-community  # Run SonarQube container
      ```
    - docker container status check :
+     ```bash
+     docker ps  # Run SonarQube container
+     docker ps -a  # Run SonarQube container
 
    ![ docker container status ](https://github.com/amittyagi1269/Amazon-Prime-Video-Clone/blob/main/Images/docker%20ps.png )
   
