@@ -76,6 +76,7 @@ Automate the deployment of an Amazon Video clone application using Docker and Je
 ### 2. Launch an Instance
 1. **Name and Tags**  
    - Provide a name for your instance (e.g., `prime-eks`).
+     hostnamectl set-hostname pipeline
 
 2. **Choose an AMI**  
    - Select **Ubuntu 24.04 LTS** (free-tier eligible).
